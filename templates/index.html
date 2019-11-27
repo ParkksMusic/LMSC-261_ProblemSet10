@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+
+{% block body %}
+    <h1>Search for Entertainment Venues in Boston</h1>
+    <select name="response">
+        <option disabled selected value="RSVP">RSVP</option>
+        <option value="LICCATDESC">LICCATDESC</option>
+        <option value="DBANAME">DBANNAME</option>
+        <option value="Neighborhood">Neighborhood</option>
+        <option value="CITY">CITY</option>
+    </select>
+    <input type="submit" value="Catagories">
+{% endblock %}

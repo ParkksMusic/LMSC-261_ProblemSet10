@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+
+{% block body %}
+    <h1>Entertainment Venues in Boston</h1>
+    <ul>
+        {% for venue in venues %}
+            <li><b>{{ venue[8] }}</b> is <u>{{ venue [5] }}</u> type, and it can hold {{ venue[11] }} people. It is located at: <br /> {{ venue[21] }} {{ venue [23] }}, {{ venue [24] }}, {{ venue [25] }}, {{ venue [26] }}.</li>
+            <br />
+        {% endfor %}
+    </ul>
+{% endblock %}
