@@ -19,5 +19,8 @@ def venues():
 
 @app.route("/search", methods=["POST"])
 def search():
+    if request.method == 'POST':
+        request.form['response']
+        return "Search successful!"
     # Implement YOUR CODE HERE
     return "hello, world"
